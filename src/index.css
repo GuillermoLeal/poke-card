@@ -1,0 +1,38 @@
+body {
+  background: #223;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
+  display: inline-block;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px gray inset;
+  border-radius: 10px;
+
+  & .image {
+    --size: 256px;
+
+    width: var(--size);
+    height: var(--size);
+  }
+
+  & .name {
+    text-align: center;
+  }
+
+  & .types {
+    display: flex;
+    gap: 1rem;
+
+    & .type {
+      padding: 6px;
+      background-color: gray;
+      border-radius: 10px;
+    }
+  }
+}
